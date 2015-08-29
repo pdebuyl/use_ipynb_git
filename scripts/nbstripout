@@ -9,7 +9,7 @@ git filter driver
 import sys
 import codecs
 
-from IPython import nbformat
+import nbformat
 
 def strip_output(nb):
     """strip the outputs from a notebook object"""
