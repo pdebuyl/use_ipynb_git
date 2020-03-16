@@ -6,14 +6,18 @@ The script `nbstripout` was found
 [here](https://github.com/cfriedline/ipynb_template/blob/master/nbstripout) with inspiration
 from [here](https://gist.github.com/minrk/6176788) (see the discussion there).
 
+It is available on PyPI, so it is rather straightforward to use.
+
 ## Short
 
-Download the [file](scripts/nbstripout).
+Install nbstripout:
+
+    python3 -m pip install --user nbstripout
 
 Add the following in the file `.git/config`:
 
     [filter "stripoutput"]
-           clean = "scripts/nbstripout"
+           clean = "nbstripout"
            smudge = cat
            required
 
